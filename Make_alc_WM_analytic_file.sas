@@ -71,26 +71,13 @@ set SASUSER.SSAGA;
 
 RUN; 
 
-PROC IMPORT OUT= SASUSER.Alc_Connectivity 
-            DATAFILE= "C:\Users\lisepe\Downloads\Alc_Connectivity\Alc_columns.csv"
-            DBMS=CSV REPLACE;
-     GETNAMES=YES;
-RUN;
-
-Data Alc_Connectivity; 
-set SASUSER.Alc_Connectivity; 
-/* Set network */ 
-
-RUN; 
-
 
 proc sql;
     create table twins_alcohol  as
     select             *     /*this asterisk tells SAS to put all of the original variables in the new data file*/
 		 ,mean( Freq ) as pair_mean_Freq       
          , ( Freq - mean( Freq ) ) as pair_dev_Freq
-    from HCP_97_edited left join Alc_Connectivity on HCP_97_edited.Subject = Alc_Connectivity.Subject 
-		left join SSAGA on HCP_97_edited.Subject = SSAGA.PUBLIC_ID
+    from HCP_97_edited left join SSAGA on HCP_97_edited.Subject = SSAGA.PUBLIC_ID
 		left join HCP_Behavioral on HCP_97_edited.Subject = HCP_Behavioral.Subject
 		left join freq on HCP_Behavioral.Subject = freq.Subject
     group by twpair      /*this 'group by' tells SAS to calculate means and other values for pairs*/
