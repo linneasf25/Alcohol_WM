@@ -121,7 +121,7 @@ head(mod_ind[order(mod_ind$mi, decreasing = T),], 20) # computes MI and ranks so
 
 
 #
-Fscores  <- lavPredict(WM_fit , 
+Fscores  <- lavPredict(WM_fit, 
                        type = "lv", # standardized fscores
                        method = "EBM") %>%  # how to calculate scores, look at lavaan manual for what method is best for your model
   as.data.frame()
