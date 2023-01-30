@@ -13,7 +13,6 @@ options nocenter;
 		class twpair NumZygosity;
 		model &class_name = Freq / solution CL alpha = .05;
 		random intercept / subject=twpair type=vc;
-		repeated / group=NumZygosity type=vc;
 		where NumZygosity in (1,0);
 	run;
 	
@@ -42,6 +41,6 @@ options nocenter;
 ***********************************************;
 
 %let class_list = PicSeq_AgeAdj IWRD_TOT ListSort_AgeAdj WM_Task_0bk_Acc 
-WM_Task_2bk_Acc ListSort_AgeAdj_z_scores PicSeq_AgeAdj_z_scores 
+WM_Task_2bk_Acc ListSort_AgeAdj_z_scores IWRD_z_scores PicSeq_AgeAdj_z_scores 
 WM_Task_0bk_Acc_z_scores WM_Task_2bk_Acc_z_scores Latent_WM Latent_WM_z_scores;
 %loop_over_classes(class_list = &class_list);
