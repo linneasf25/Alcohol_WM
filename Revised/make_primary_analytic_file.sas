@@ -220,16 +220,6 @@ proc sql;
     from twins_alcohol6;
 quit;
 
-proc corr data = twins_alcohol7; 
-var IWRD_TOT IWRD_z_scores PicSeq_AgeAdj PicSeq_AgeAdj_z_scores ListSort_AgeAdj 
-ListSort_AgeAdj_z_scores WM_Task_0bk_Acc WM_Task_0bk_Acc_z_scores WM_Task_2bk_Acc WM_Task_2bk_Acc_z_scores
-Latent_WM  Latent_WM_z_scores; 
-run; 
-
-
-proc univariate data = twins_alcohol7; 
-var PicSeq_AgeAdj_z_scores ListSort_AgeAdj_z_scores IWRD_z_scores WM_Task_0bk_Acc_z_scores WM_Task_2bk_Acc_z_scores; 
-run; 
 
 Data files2.twins_alcohol7; 
 set twins_alcohol7; 
