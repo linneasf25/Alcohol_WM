@@ -18,8 +18,6 @@ Error in install.packages : Updating loaded packages
 > 
 > #----------------------------------------------------------------------------------------
 > #  Load in Data
-> ### Data consists of 6 variables: SubID, 
-> ### and 5 symptom count variables, Cannabis, Stimulant, Sedative, Opiates, Other
 > #-----------------------------------------------------------------------------------------
 > df <- read.csv("newfactor_cluster.csv")
 > 
