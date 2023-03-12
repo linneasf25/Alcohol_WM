@@ -1,0 +1,156 @@
+
+
+NOTE: SAS initialization used:
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+1          /* assign the folder where our SAS datasets are stored as a SAS library */
+2          libname files2 "/N/slate/lisepe/Alcohol_WM";
+NOTE: Libref FILES2 was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /N/slate/lisepe/Alcohol_WM
+3          
+4          options nocenter;
+5          
+6          ***********************************************
+7          *** Macro(function) to run mixed models for different WM or attention tests ***
+8          ***********************************************;
+9          	
+10         %macro run_mixedmodel_for_class(class_name);
+11         	title "Model 4 association of alcohol score with &class_name";
+12         	proc mixed data= files2.twins_alcohol7 method=ml covtest noclprint;
+13         		class twpair NumZygosity;
+14         		model &class_name = pair_dev_Freq pair_mean_Freq NumZygosity pair_dev_Freq*NumZygosity / solution CL alpha = .05;
+15         		random intercept / subject=twpair type=vc;
+16         		repeated / group=NumZygosity type=vc;
+17         		where NumZygosity in (1,0);
+18         	run;
+19         	
+20         %mend run_mixedmodel_for_class;
+21         
+22         ***********************************************
+23         *** Iterate through each class and run the run_logistic_for_class macro for each one ***
+24         *** variable next_class holds the class logistic needs to be run for ***
+25         ***********************************************;
+26         
+27         
+28         %macro loop_over_classes(class_list);
+29         
+30         	%local i next_class;
+31         	%let i = 1;
+32         	%do %while (%scan(&class_list, &i) ne);
+33         		%let next_class = %scan(&class_list, &i);
+34         		%run_mixedmodel_for_class(&next_class);
+35         		%let i = %eval(&i + 1);
+36         	%end;
+37         
+38         %mend loop_over_classes;
+39         
+40         ***********************************************
+41         *** Define a list of classes that we need to run logistic for and loop over the list ***
+42         ***********************************************;
+43         
+44         %let class_list = PicSeq_AgeAdj IWRD_TOT ListSort_AgeAdj WM_Task_0bk_Acc
+45         WM_Task_2bk_Acc ListSort_AgeAdj_z_scores IWRD_z_scores PicSeq_AgeAdj_z_scores
+46         WM_Task_0bk_Acc_z_scores WM_Task_2bk_Acc_z_scores Latent_WM Latent_WM_z_scores;
+47         %loop_over_classes(class_list = &class_list);
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 1-2.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.10 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 3-4.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 5-6.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.04 seconds
+      
+
+3 The SAS System                                                                                Monday, January  2, 2023 08:27:00 PM
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 7-8.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 9-10.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.05 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 11-12.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 13-14.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.05 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 15-16.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 17-18.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.05 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 19-20.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: Convergence criteria met.
+4 The SAS System                                                                                Monday, January  2, 2023 08:27:00 PM
+
+NOTE: The PROCEDURE MIXED printed pages 21-22.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.06 seconds
+      
+
+
+NOTE: Convergence criteria met.
+NOTE: The PROCEDURE MIXED printed pages 23-24.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.05 seconds
+      
+
