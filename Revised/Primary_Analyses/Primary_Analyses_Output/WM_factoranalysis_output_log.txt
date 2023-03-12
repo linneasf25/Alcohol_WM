@@ -1,1 +1,221 @@
+> #  CFA script
+> #------------------------------------------------------------
+> 
+> # Create text string describing model
+> ### Look at lavaan sytax for more info "=~" denotes what are indicators of what factor
+> 
+> LatentWM_mod <- 'LatentWM =~ PicSeq_AgeAdj + IWRD_TOT + WM_Task_2bk_Acc + ListSort_AgeAdj'
+> 
+> correlation = cor(df[,3:6], method = "spearman") %>% round(2)
+> 
+> # Run CFA model
+> LatentWM_fit <- cfa(LatentWM_mod , # model to be run (text file)
++                 data= df, # data 
++                 estimator = "MLR", # Robust ML estimator for skewed data (like symptom counts)
++                 std.lv = T,# asks for standardized parameters (most common CFA presentation)
++                 cluster = "Mother_ID") 
+ 
+> varTable(LatentWM_fit)
+             name idx nobs    type exo user mean var nlev lnam
+1   PicSeq_AgeAdj   3  436 numeric   0    0    0   1    0     
+2        IWRD_TOT   4  436 numeric   0    0    0   1    0     
+3 WM_Task_2bk_Acc   6  436 numeric   0    0    0   1    0     
+4 ListSort_AgeAdj   5  436 numeric   0    0    0   1    0     
+> 
+> # Plot model
+> semPaths(LatentWM_fit, # CFA model
++          title = F, 
++          what = "std", # print standardized factor loadings
++          intercepts = F, 
++          residuals = F, 
++          layout = "tree2", # layout of figures
++          edge.label.cex = .8)
+> 
+> # Note: CFI is the Comparative Fit Index – values can range between 0 and 1 (values greater than 0.90, conservatively 0.95 indicate good fit)
+> #CFA Summary 
+> ## it changed to be .774 instead of .773 when I took out typical drinks  
+> ### Provides ALOT of information
+> summary(LatentWM_fit, 
++         standardized= TRUE, # standardize parameters
++         fit.measure = TRUE) # fit measures in 
+lavaan 0.6.14 ended normally after 16 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        12
+
+  Number of observations                           436
+  Number of clusters [Mother_ID]                   218
+
+Model Test User Model:
+                                              Standard      Scaled
+  Test Statistic                                 4.724       3.907
+  Degrees of freedom                                 2           2
+  P-value (Chi-square)                           0.094       0.142
+  Scaling correction factor                                  1.209
+    Yuan-Bentler correction (Mplus variant)                       
+
+Model Test Baseline Model:
+
+  Test statistic                               160.936     115.085
+  Degrees of freedom                                 6           6
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  1.398
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.982       0.983
+  Tucker-Lewis Index (TLI)                       0.947       0.948
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.985
+  Robust Tucker-Lewis Index (TLI)                            0.955
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -2394.521   -2394.521
+  Scaling correction factor                                  1.425
+      for the MLR correction                                      
+  Loglikelihood unrestricted model (H1)      -2392.159   -2392.159
+  Scaling correction factor                                  1.394
+      for the MLR correction                                      
+                                                                  
+  Akaike (AIC)                                4813.041    4813.041
+  Bayesian (BIC)                              4861.973    4861.973
+  Sample-size adjusted Bayesian (SABIC)       4823.891    4823.891
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.056       0.047
+  90 Percent confidence interval - lower         0.000       0.000
+  90 Percent confidence interval - upper         0.123       0.110
+  P-value H_0: RMSEA <= 0.050                    0.344       0.439
+  P-value H_0: RMSEA >= 0.080                    0.338       0.232
+                                                                  
+  Robust RMSEA                                               0.051
+  90 Percent confidence interval - lower                     0.000
+  90 Percent confidence interval - upper                     0.128
+  P-value H_0: Robust RMSEA <= 0.050                         0.380
+  P-value H_0: Robust RMSEA >= 0.080                         0.335
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.022       0.022
+
+Parameter Estimates:
+
+  Standard errors                        Robust.cluster
+  Information                                  Observed
+  Observed information based on                 Hessian
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  LatentWM =~                                                           
+    PicSeq_AgeAdj     0.507    0.073    6.941    0.000    0.507    0.507
+    IWRD_TOT          0.251    0.082    3.074    0.002    0.251    0.251
+    WM_Tsk_2bk_Acc    0.606    0.069    8.735    0.000    0.606    0.607
+    ListSort_AgAdj    0.639    0.075    8.487    0.000    0.639    0.639
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .PicSeq_AgeAdj    -0.000    0.057   -0.000    1.000   -0.000   -0.000
+   .IWRD_TOT          0.000    0.055    0.000    1.000    0.000    0.000
+   .WM_Tsk_2bk_Acc   -0.000    0.059   -0.000    1.000   -0.000   -0.000
+   .ListSort_AgAdj    0.000    0.059    0.000    1.000    0.000    0.000
+    LatentWM          0.000                               0.000    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .PicSeq_AgeAdj     0.741    0.069   10.799    0.000    0.741    0.743
+   .IWRD_TOT          0.935    0.079   11.805    0.000    0.935    0.937
+   .WM_Tsk_2bk_Acc    0.631    0.076    8.337    0.000    0.631    0.632
+   .ListSort_AgAdj    0.590    0.110    5.358    0.000    0.590    0.591
+    LatentWM          1.000                               1.000    1.000
+
+> 
+> 
+> # Pull out fitmeasures you want
+> ## create list of stats to pull out
+> fit.stats <- c("npar", # number of parameters
++                "chisq.scaled", # chi-square stat
++                "df.scaled", # chi degrees of freedom
++                "pvalue.scaled", # chi squared p-value
++                "cfi.robust", 
++                "BIC", 
++                "rmsea.robust") 
+> 
+> # look at fit statistics
+> fitmeasures(LatentWM_fit,
++             fit.measures = fit.stats)
+         npar  chisq.scaled     df.scaled pvalue.scaled    cfi.robust           bic  rmsea.robust 
+       12.000         3.907         2.000         0.142         0.985      4861.973         0.051 
+> 
+> 
+> 
+> mod_ind <- modificationindices(LatentWM_fit)
+> head(mod_ind[order(mod_ind$mi, decreasing = T),], 20) # computes MI and ranks sources of misfit
+               lhs op             rhs    mi    epc sepc.lv sepc.all sepc.nox
+15   PicSeq_AgeAdj ~~        IWRD_TOT 4.022  0.094   0.094    0.113    0.113
+20 WM_Task_2bk_Acc ~~ ListSort_AgeAdj 4.022  0.287   0.287    0.470    0.470
+19        IWRD_TOT ~~ ListSort_AgeAdj 2.742 -0.085  -0.085   -0.114   -0.114
+16   PicSeq_AgeAdj ~~ WM_Task_2bk_Acc 2.742 -0.162  -0.162   -0.237   -0.237
+17   PicSeq_AgeAdj ~~ ListSort_AgeAdj 0.006 -0.008  -0.008   -0.013   -0.013
+18        IWRD_TOT ~~ WM_Task_2bk_Acc 0.006 -0.004  -0.004   -0.005   -0.005
+> # results show residual relationship between Sed_Sx and Op_Sx is largest source of misfit
+> ## model already fits well so no additional changes are needed based on MI
+> 
+> 
+> #
+> Fscores  <- lavPredict(LatentWM_fit , 
++                        type = "lv", # standardized fscores
++                        method = "EBM") %>%  # how to calculate scores, look at lavaan manual for what method is best for your model
++   as.data.frame()
+> 
+> df1 <- cbind(df, Fscores)
+> 
+> #------------------------------------------------------------
+> #  Pulling out paramaters we want 
+> #------------------------------------------------------------
+> # lavInspect "pulls" out the elements you specify
+> 
+> # this pulls out standardized parameters
+> lavInspect(LatentWM_fit,
++            what = "std")
+$lambda
+                LtntWM
+PicSeq_AgeAdj    0.507
+IWRD_TOT         0.251
+WM_Task_2bk_Acc  0.607
+ListSort_AgeAdj  0.639
+
+$theta
+                PcS_AA IWRD_T WM_T_2 LsS_AA
+PicSeq_AgeAdj    0.743                     
+IWRD_TOT         0.000  0.937              
+WM_Task_2bk_Acc  0.000  0.000  0.632       
+ListSort_AgeAdj  0.000  0.000  0.000  0.591
+
+$psi
+         LtntWM
+LatentWM      1
+
+$nu
+                intrcp
+PicSeq_AgeAdj        0
+IWRD_TOT             0
+WM_Task_2bk_Acc      0
+ListSort_AgeAdj      0
+
+$alpha
+         intrcp
+LatentWM      0
+
+> 
+> # this pulls out standardized factor loadings specifically
+> lavInspect(LatentWM_fit,
++            what = "std")$lambda
+                LtntWM
+PicSeq_AgeAdj    0.507
+IWRD_TOT         0.251
+WM_Task_2bk_Acc  0.607
+ListSort_AgeAdj  0.639
 
