@@ -711,3 +711,857 @@ Value      Obs        Value      Obs
     0      396          286      401
     0      394          286      402
 
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   1
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  Latent_WM
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean               0.06684418    Sum Observations      10.56138
+Std Deviation      0.78764604    Variance            0.62038629
+Skewness           -0.5082629    Kurtosis            0.13884451
+Uncorrected SS     98.1066145    Corrected SS        97.4006477
+Coeff Variation    1178.33157    Std Error Mean      0.06266175
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     0.066844     Std Deviation            0.78765
+Median   0.201500     Variance                 0.62039
+Mode      .           Range                    3.96624
+                      Interquartile Range      1.00571
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  1.066746    Pr > |t|    0.2877
+Sign           M        11    Pr >= |M|   0.0945
+Signed Rank    S     944.5    Pr >= |S|   0.1012
+
+
+Quantiles (Definition 5)
+ 
+Level          Quantile
+
+100% Max       1.787417
+99%            1.682240
+95%            1.286954
+90%            1.009613
+75% Q3         0.598632
+50% Median     0.201500
+25% Q1        -0.407075
+10%           -0.992550
+5%            -1.207520
+1%            -2.146703
+0% Min        -2.178825
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   2
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  Latent_WM
+
+           Extreme Observations
+ 
+------Lowest-----        -----Highest-----
+ 
+   Value      Obs           Value      Obs
+
+-2.17882       52         1.36366      151
+-2.14670        4         1.39715      148
+-1.90221       53         1.43056      156
+-1.88745      143         1.68224       65
+-1.79499       63         1.78742      147
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   3
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  PicSeq_AgeAdj
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean               106.888165    Sum Observations      16888.33
+Std Deviation      16.4322761    Variance            270.019697
+Skewness           -0.0643049    Kurtosis            -0.8830983
+Uncorrected SS     1847555.69    Corrected SS        42393.0924
+Coeff Variation    15.3733354    Std Error Mean      1.30728169
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     106.8882     Std Deviation           16.43228
+Median   106.3000     Variance               270.01970
+Mode     130.2400     Range                   60.93000
+                      Interquartile Range     25.04000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  81.76368    Pr > |t|    <.0001
+Sign           M        79    Pr >= |M|   <.0001
+Signed Rank    S    6280.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max        134.81
+99%             134.81
+95%             134.81
+90%             130.24
+75% Q3          120.31
+50% Median      106.30
+25% Q1           95.27
+10%              84.79
+5%               78.94
+1%               74.52
+0% Min           73.88
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   4
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  PicSeq_AgeAdj
+
+          Extreme Observations
+ 
+-----Lowest----        -----Highest----
+ 
+ Value      Obs          Value      Obs
+
+ 73.88      102         134.81       65
+ 74.52      123         134.81      105
+ 74.95       32         134.81      108
+ 75.17       22         134.81      147
+ 75.17        4         134.81      151
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   5
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  IWRD_TOT
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean               35.4113924    Sum Observations          5595
+Std Deviation      3.28503603    Variance            10.7914617
+Skewness           -0.8642038    Kurtosis            0.83742558
+Uncorrected SS         199821    Corrected SS        1694.25949
+Coeff Variation    9.27677736    Std Error Mean      0.26134343
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     35.41139     Std Deviation            3.28504
+Median   36.00000     Variance                10.79146
+Mode     37.00000     Range                   18.00000
+                      Interquartile Range      5.00000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  135.4975    Pr > |t|    <.0001
+Sign           M        79    Pr >= |M|   <.0001
+Signed Rank    S    6280.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max            40
+99%                 40
+95%                 40
+90%                 39
+75% Q3              38
+50% Median          36
+25% Q1              33
+10%                 31
+5%                  30
+1%                  26
+0% Min              22
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   6
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  IWRD_TOT
+
+        Extreme Observations
+ 
+----Lowest----        ----Highest---
+ 
+Value      Obs        Value      Obs
+
+   22        4           40      110
+   26       52           40      117
+   29      151           40      125
+   29      140           40      136
+   29      137           40      143
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   7
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  ListSort_AgeAdj
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean                102.87538    Sum Observations      16254.31
+Std Deviation      13.9725772    Variance            195.232914
+Skewness           -0.2375588    Kurtosis            0.43518829
+Uncorrected SS     1702819.88    Corrected SS        30651.5675
+Coeff Variation    13.5820419    Std Error Mean      1.11159856
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     102.8754     Std Deviation           13.97258
+Median   102.6300     Variance               195.23291
+Mode      98.4400     Range                   80.77000
+                      Interquartile Range     18.33000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  92.54724    Pr > |t|    <.0001
+Sign           M        79    Pr >= |M|   <.0001
+Signed Rank    S    6280.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max        140.86
+99%             131.78
+95%             127.41
+90%             122.75
+75% Q3          112.66
+50% Median      102.63
+25% Q1           94.33
+10%              84.01
+5%               80.70
+1%               62.34
+0% Min           60.09
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   8
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  ListSort_AgeAdj
+
+          Extreme Observations
+ 
+-----Lowest----        -----Highest----
+ 
+ Value      Obs          Value      Obs
+
+ 60.09       38         128.24       39
+ 62.34        7         128.24       90
+ 69.10        8         131.78       65
+ 72.90       53         131.78      147
+ 72.90       46         140.86      148
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM   9
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_0bk_Acc
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean               90.8978544    Sum Observations     14361.861
+Std Deviation      9.95622878    Variance            99.1264916
+Skewness           -1.7325063    Kurtosis            2.83535092
+Uncorrected SS     1321025.21    Corrected SS        15562.8592
+Coeff Variation    10.9532055    Std Error Mean      0.79207503
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean      90.8979     Std Deviation            9.95623
+Median    94.0620     Variance                99.12649
+Mode     100.0000     Range                   45.31200
+                      Interquartile Range     10.31200
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  114.7591    Pr > |t|    <.0001
+Sign           M        79    Pr >= |M|   <.0001
+Signed Rank    S    6280.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max       100.000
+99%            100.000
+95%            100.000
+90%            100.000
+75% Q3          97.500
+50% Median      94.062
+25% Q1          87.188
+10%             76.875
+5%              65.625
+1%              56.250
+0% Min          54.688
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  10
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_0bk_Acc
+
+         Extreme Observations
+ 
+-----Lowest-----        ----Highest---
+ 
+  Value      Obs        Value      Obs
+
+ 54.688       14          100      151
+ 56.250       58          100      152
+ 58.125      142          100      153
+ 61.250        4          100      157
+ 61.562      146          100      158
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  11
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_2bk_Acc
+
+                            Moments
+
+N                         158    Sum Weights                158
+Mean                85.169443    Sum Observations     13456.772
+Std Deviation      10.7063625    Variance            114.626199
+Skewness           -1.1332015    Kurtosis            0.70844967
+Uncorrected SS     1164102.09    Corrected SS        17996.3132
+Coeff Variation    12.5706617    Std Error Mean      0.85175247
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     85.16944     Std Deviation           10.70636
+Median   87.58700     Variance               114.62620
+Mode     94.96500     Range                   48.26400
+                      Interquartile Range     11.45900
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  99.99319    Pr > |t|    <.0001
+Sign           M        79    Pr >= |M|   <.0001
+Signed Rank    S    6280.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max       100.000
+99%            100.000
+95%             97.569
+90%             96.181
+75% Q3          92.535
+50% Median      87.587
+25% Q1          81.076
+10%             68.403
+5%              63.194
+1%              52.431
+0% Min          51.736
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  12
+
+NumZygosity=0
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_2bk_Acc
+
+           Extreme Observations
+ 
+-----Lowest-----        -----Highest-----
+ 
+  Value      Obs           Value      Obs
+
+ 51.736       52          97.569      152
+ 52.431       63          98.785       79
+ 55.382      143          98.785       81
+ 56.424       97         100.000       87
+ 60.938        2         100.000      136
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  13
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  Latent_WM
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               -0.0379906    Sum Observations     -10.56138
+Std Deviation      0.79536387    Variance            0.63260369
+Skewness           -0.3586518    Kurtosis            -0.2045089
+Uncorrected SS     175.632456    Corrected SS        175.231223
+Coeff Variation    -2093.5821    Std Error Mean      0.04770276
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     -0.03799     Std Deviation            0.79536
+Median    0.03498     Variance                 0.63260
+Mode       .          Range                    3.99570
+                      Interquartile Range      1.02969
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t   -0.7964    Pr > |t|    0.4265
+Sign           M         7    Pr >= |M|   0.4356
+Signed Rank    S    -151.5    Pr >= |S|   0.9103
+
+
+Quantiles (Definition 5)
+ 
+Level           Quantile
+
+100% Max       1.6461378
+99%            1.5137055
+95%            1.2548555
+90%            0.9675546
+75% Q3         0.4969587
+50% Median     0.0349762
+25% Q1        -0.5327310
+10%           -1.1913865
+5%            -1.5822382
+1%            -1.9142528
+0% Min        -2.3495602
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  14
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  Latent_WM
+
+           Extreme Observations
+ 
+------Lowest-----        -----Highest-----
+ 
+   Value      Obs           Value      Obs
+
+-2.34956      166         1.42611      374
+-1.98811      425         1.44159      370
+-1.91425      165         1.51371      381
+-1.87995      162         1.58494      264
+-1.81678      330         1.64614      363
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  15
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  PicSeq_AgeAdj
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               104.543022    Sum Observations      29062.96
+Std Deviation      17.0543876    Variance            290.852137
+Skewness           -0.2330155    Kurtosis            -0.1946265
+Uncorrected SS      3118895.7    Corrected SS        80566.0421
+Coeff Variation    16.3132722    Std Error Mean       1.0228542
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     104.5430     Std Deviation           17.05439
+Median   103.9500     Variance               290.85214
+Mode     134.8100     Range                   78.33000
+                      Interquartile Range     22.06000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  102.2072    Pr > |t|    <.0001
+Sign           M       139    Pr >= |M|   <.0001
+Signed Rank    S   19390.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max        134.81
+99%             134.81
+95%             134.81
+90%             130.24
+75% Q3          116.16
+50% Median      103.95
+25% Q1           94.10
+10%              82.66
+5%               74.52
+1%               58.20
+0% Min           56.48
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  16
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  PicSeq_AgeAdj
+
+          Extreme Observations
+ 
+-----Lowest----        -----Highest----
+ 
+ Value      Obs          Value      Obs
+
+ 56.48      254         134.81      373
+ 58.20      330         134.81      374
+ 58.20      230         134.81      378
+ 62.14      395         134.81      381
+ 65.33      166         134.81      390
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  17
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  IWRD_TOT
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               35.6690647    Sum Observations          9916
+Std Deviation      2.84849315    Variance             8.1139132
+Skewness             -1.02021    Kurtosis             1.3260415
+Uncorrected SS         355942    Corrected SS        2247.55396
+Coeff Variation    7.98589244    Std Error Mean      0.17084127
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     35.66906     Std Deviation            2.84849
+Median   36.00000     Variance                 8.11391
+Mode     37.00000     Range                   15.00000
+                      Interquartile Range      4.00000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  208.7848    Pr > |t|    <.0001
+Sign           M       139    Pr >= |M|   <.0001
+Signed Rank    S   19390.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max            40
+99%                 40
+95%                 39
+90%                 39
+75% Q3              38
+50% Median          36
+25% Q1              34
+10%                 32
+5%                  31
+1%                  26
+0% Min              25
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  18
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  IWRD_TOT
+
+        Extreme Observations
+ 
+----Lowest----        ----Highest---
+ 
+Value      Obs        Value      Obs
+
+   25      365           40      356
+   26      348           40      366
+   26      321           40      379
+   27      332           40      426
+   27      214           40      431
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  19
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  ListSort_AgeAdj
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               102.519748    Sum Observations      28500.49
+Std Deviation      13.6998026    Variance            187.684592
+Skewness           -0.0008803    Kurtosis            -0.4153808
+Uncorrected SS     2973851.69    Corrected SS        51988.6319
+Coeff Variation    13.3630865    Std Error Mean      0.82165956
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     102.5197     Std Deviation           13.69980
+Median   102.6300     Variance               187.68459
+Mode     102.6300     Range                   66.00000
+                      Interquartile Range     19.36000
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  124.7716    Pr > |t|    <.0001
+Sign           M       139    Pr >= |M|   <.0001
+Signed Rank    S   19390.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max        132.49
+99%             132.49
+95%             123.73
+90%             122.75
+75% Q3          112.66
+50% Median      102.63
+25% Q1           93.30
+10%              84.01
+5%               80.70
+1%               69.10
+0% Min           66.49
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  20
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  ListSort_AgeAdj
+
+          Extreme Observations
+ 
+-----Lowest----        -----Highest----
+ 
+ Value      Obs          Value      Obs
+
+ 66.49      313         131.78      294
+ 69.10      425         131.78      358
+ 69.10      350         132.49      370
+ 69.10      197         132.49      414
+ 75.82      284         132.49      416
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  21
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_0bk_Acc
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               90.0123058    Sum Observations     25023.421
+Std Deviation      9.69351586    Variance            93.9642496
+Skewness           -1.6760979    Kurtosis             2.9952066
+Uncorrected SS     2278443.92    Corrected SS        26028.0972
+Coeff Variation    10.7691007    Std Error Mean      0.58137845
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     90.01231     Std Deviation            9.69352
+Median   92.18800     Variance                93.96425
+Mode     97.50000     Range                   49.37500
+                      Interquartile Range     10.62500
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  154.8257    Pr > |t|    <.0001
+Sign           M       139    Pr >= |M|   <.0001
+Signed Rank    S   19390.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max       100.000
+99%            100.000
+95%            100.000
+90%             99.062
+75% Q3          97.500
+50% Median      92.188
+25% Q1          86.875
+10%             76.875
+5%              67.812
+1%              55.625
+0% Min          50.625
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  22
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_0bk_Acc
+
+         Extreme Observations
+ 
+-----Lowest-----        ----Highest---
+ 
+  Value      Obs        Value      Obs
+
+ 50.625      170          100      380
+ 54.062      329          100      400
+ 55.625      266          100      420
+ 56.562      283          100      422
+ 56.562      268          100      431
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  23
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_2bk_Acc
+
+                            Moments
+
+N                         278    Sum Weights                278
+Mean               83.1609604    Sum Observations     23118.747
+Std Deviation      10.5372263    Variance            111.033138
+Skewness           -0.8642692    Kurtosis            0.24436789
+Uncorrected SS     1953333.38    Corrected SS        30756.1793
+Coeff Variation     12.670881    Std Error Mean      0.63198084
+
+
+              Basic Statistical Measures
+ 
+    Location                    Variability
+
+Mean     83.16096     Std Deviation           10.53723
+Median   85.06900     Variance               111.03314
+Mode     92.36100     Range                   50.86800
+                      Interquartile Range     12.84700
+
+Note: The mode displayed is the smallest of 2 modes with a count of 9.
+
+
+           Tests for Location: Mu0=0
+ 
+Test           -Statistic-    -----p Value------
+
+Student's t    t  131.5878    Pr > |t|    <.0001
+Sign           M       139    Pr >= |M|   <.0001
+Signed Rank    S   19390.5    Pr >= |S|   <.0001
+
+
+Quantiles (Definition 5)
+ 
+Level         Quantile
+
+100% Max       100.000
+99%            100.000
+95%             96.354
+90%             94.965
+75% Q3          91.146
+50% Median      85.069
+25% Q1          78.299
+10%             66.840
+5%              62.153
+1%              54.167
+0% Min          49.132
+
+
+The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  24
+
+NumZygosity=1
+
+The UNIVARIATE Procedure
+Variable:  WM_Task_2bk_Acc
+
+           Extreme Observations
+ 
+-----Lowest-----        -----Highest-----
+ 
+  Value      Obs           Value      Obs
+
+ 49.132      227          98.785      380
+ 49.653      228          98.785      381
+ 54.167      425         100.000      252
+ 54.340      329         100.000      292
+ 56.076      192         100.000      424
