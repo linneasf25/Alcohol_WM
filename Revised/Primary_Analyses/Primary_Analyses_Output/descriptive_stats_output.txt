@@ -1000,77 +1000,6 @@ Variable:  ListSort_AgeAdj
 NumZygosity=0
 
 The UNIVARIATE Procedure
-Variable:  WM_Task_0bk_Acc
-
-                            Moments
-
-N                         158    Sum Weights                158
-Mean               90.8978544    Sum Observations     14361.861
-Std Deviation      9.95622878    Variance            99.1264916
-Skewness           -1.7325063    Kurtosis            2.83535092
-Uncorrected SS     1321025.21    Corrected SS        15562.8592
-Coeff Variation    10.9532055    Std Error Mean      0.79207503
-
-
-              Basic Statistical Measures
- 
-    Location                    Variability
-
-Mean      90.8979     Std Deviation            9.95623
-Median    94.0620     Variance                99.12649
-Mode     100.0000     Range                   45.31200
-                      Interquartile Range     10.31200
-
-
-           Tests for Location: Mu0=0
- 
-Test           -Statistic-    -----p Value------
-
-Student's t    t  114.7591    Pr > |t|    <.0001
-Sign           M        79    Pr >= |M|   <.0001
-Signed Rank    S    6280.5    Pr >= |S|   <.0001
-
-
-Quantiles (Definition 5)
- 
-Level         Quantile
-
-100% Max       100.000
-99%            100.000
-95%            100.000
-90%            100.000
-75% Q3          97.500
-50% Median      94.062
-25% Q1          87.188
-10%             76.875
-5%              65.625
-1%              56.250
-0% Min          54.688
-
-
-The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  10
-
-NumZygosity=0
-
-The UNIVARIATE Procedure
-Variable:  WM_Task_0bk_Acc
-
-         Extreme Observations
- 
------Lowest-----        ----Highest---
- 
-  Value      Obs        Value      Obs
-
- 54.688       14          100      151
- 56.250       58          100      152
- 58.125      142          100      153
- 61.250        4          100      157
- 61.562      146          100      158
-The SAS System                                                                             Sunday, February 19, 2023 09:02:00 PM  11
-
-NumZygosity=0
-
-The UNIVARIATE Procedure
 Variable:  WM_Task_2bk_Acc
 
                             Moments
