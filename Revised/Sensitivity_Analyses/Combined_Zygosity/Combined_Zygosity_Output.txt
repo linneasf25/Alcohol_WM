@@ -1,0 +1,430 @@
+Model 4 association of alcohol score with ListSort_AgeAdj_z_scores                            Monday, March 13, 2023 12:40:00 PM   1
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     FILES2.TWINS_ALCOHOL7    
+Dependent Variable           ListSort_AgeAdj_z_scores 
+Covariance Structure         Variance Components      
+Subject Effect               twpair                   
+Group Effects                NumZygosity, NumZygosity 
+Estimation Method            ML                       
+Residual Variance Method     None                     
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             4
+Columns in X                      3
+Columns in Z per Subject          2
+Subjects                        218
+Max Obs per Subject               2
+
+
+          Number of Observations
+
+Number of Observations Read             436
+Number of Observations Used             436
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations        -2 Log Like       Criterion
+
+        0              1      1231.37713165                
+        1              2      1162.72258190      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                           Covariance Parameter Estimates
+ 
+                                                      Standard         Z
+Cov Parm      Subject    Group            Estimate       Error     Value      Pr > Z
+
+Intercept     twpair     NumZygosity 0      0.4450      0.1247      3.57      0.0002
+Intercept     twpair     NumZygosity 1      0.5408     0.09425      5.74      <.0001
+Residual                 NumZygosity 0      0.5696     0.09078      6.27      <.0001
+Residual                 NumZygosity 1      0.4297     0.05159      8.33      <.0001
+
+
+           Fit Statistics
+
+-2 Log Likelihood              1162.7
+AIC (Smaller is Better)        1176.7
+AICC (Smaller is Better)       1177.0
+Model 4 association of alcohol score with ListSort_AgeAdj_z_scores                            Monday, March 13, 2023 12:40:00 PM   2
+
+The Mixed Procedure
+
+           Fit Statistics
+
+BIC (Smaller is Better)        1200.4
+
+
+                                      Solution for Fixed Effects
+ 
+                              Standard
+Effect            Estimate       Error      DF    t Value    Pr > |t|     Alpha       Lower       Upper
+
+Intercept         0.000187     0.05850     216       0.00      0.9974      0.05     -0.1151      0.1155
+pair_dev_Freq      -0.2311     0.08545     217      -2.70      0.0074      0.05     -0.3995    -0.06269
+pair_mean_Freq     0.07151     0.06924     217       1.03      0.3029      0.05    -0.06496      0.2080
+
+
+           Type 3 Tests of Fixed Effects
+ 
+                   Num     Den
+Effect              DF      DF    F Value    Pr > F
+
+pair_dev_Freq        1     217       7.31    0.0074
+pair_mean_Freq       1     217       1.07    0.3029
+Model 4 association of alcohol score with IWRD_z_scores                                       Monday, March 13, 2023 12:40:00 PM   3
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     FILES2.TWINS_ALCOHOL7    
+Dependent Variable           IWRD_z_scores            
+Covariance Structure         Variance Components      
+Subject Effect               twpair                   
+Group Effects                NumZygosity, NumZygos    
+Estimation Method            ML                       
+Residual Variance Method     None                     
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             4
+Columns in X                      3
+Columns in Z per Subject          2
+Subjects                        218
+Max Obs per Subject               2
+
+
+          Number of Observations
+
+Number of Observations Read             436
+Number of Observations Used             436
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations        -2 Log Like       Criterion
+
+        0              1      1233.39586746                
+        1              2      1203.92962392      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                           Covariance Parameter Estimates
+ 
+                                                      Standard         Z
+Cov Parm      Subject    Group            Estimate       Error     Value      Pr > Z
+
+Intercept     twpair     NumZygosity 0      0.3119      0.1389      2.25      0.0124
+Intercept     twpair     NumZygosity 1      0.3147     0.07923      3.97      <.0001
+Residual                 NumZygosity 0      0.8787      0.1403      6.26      <.0001
+Residual                 NumZygosity 1      0.5632     0.06769      8.32      <.0001
+
+
+           Fit Statistics
+
+-2 Log Likelihood              1203.9
+AIC (Smaller is Better)        1217.9
+AICC (Smaller is Better)       1218.2
+Model 4 association of alcohol score with IWRD_z_scores                                       Monday, March 13, 2023 12:40:00 PM   4
+
+The Mixed Procedure
+
+           Fit Statistics
+
+BIC (Smaller is Better)        1241.6
+
+
+                                      Solution for Fixed Effects
+ 
+                              Standard
+Effect            Estimate       Error      DF    t Value    Pr > |t|     Alpha       Lower       Upper
+
+Intercept         0.004213     0.05437     216       0.08      0.9383      0.05     -0.1030      0.1114
+pair_dev_Freq     0.007335      0.1010     217       0.07      0.9422      0.05     -0.1918      0.2065
+pair_mean_Freq     -0.1015     0.06348     217      -1.60      0.1114      0.05     -0.2266     0.02364
+
+
+           Type 3 Tests of Fixed Effects
+ 
+                   Num     Den
+Effect              DF      DF    F Value    Pr > F
+
+pair_dev_Freq        1     217       0.01    0.9422
+pair_mean_Freq       1     217       2.56    0.1114
+Model 4 association of alcohol score with PicSeq_AgeAdj_z_scores                              Monday, March 13, 2023 12:40:00 PM   5
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     FILES2.TWINS_ALCOHOL7    
+Dependent Variable           PicSeq_AgeAdj_z_scores   
+Covariance Structure         Variance Components      
+Subject Effect               twpair                   
+Group Effects                NumZygosity, NumZygosi   
+Estimation Method            ML                       
+Residual Variance Method     None                     
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             4
+Columns in X                      3
+Columns in Z per Subject          2
+Subjects                        218
+Max Obs per Subject               2
+
+
+          Number of Observations
+
+Number of Observations Read             436
+Number of Observations Used             436
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations        -2 Log Like       Criterion
+
+        0              1      1231.71072209                
+        1              2      1181.68333205      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                           Covariance Parameter Estimates
+ 
+                                                      Standard         Z
+Cov Parm      Subject    Group            Estimate       Error     Value      Pr > Z
+
+Intercept     twpair     NumZygosity 0      0.1340      0.1074      1.25      0.1061
+Intercept     twpair     NumZygosity 1      0.5491     0.09817      5.59      <.0001
+Residual                 NumZygosity 0      0.8068      0.1285      6.28      <.0001
+Residual                 NumZygosity 1      0.4649     0.05580      8.33      <.0001
+
+
+           Fit Statistics
+
+-2 Log Likelihood              1181.7
+AIC (Smaller is Better)        1195.7
+AICC (Smaller is Better)       1195.9
+Model 4 association of alcohol score with PicSeq_AgeAdj_z_scores                              Monday, March 13, 2023 12:40:00 PM   6
+
+The Mixed Procedure
+
+           Fit Statistics
+
+BIC (Smaller is Better)        1219.4
+
+
+                                      Solution for Fixed Effects
+ 
+                              Standard
+Effect            Estimate       Error      DF    t Value    Pr > |t|     Alpha       Lower       Upper
+
+Intercept          0.01246     0.05548     216       0.22      0.8225      0.05    -0.09689      0.1218
+pair_dev_Freq      -0.2736     0.09361     217      -2.92      0.0038      0.05     -0.4581    -0.08906
+pair_mean_Freq     0.02542     0.06694     217       0.38      0.7045      0.05     -0.1065      0.1574
+
+
+           Type 3 Tests of Fixed Effects
+ 
+                   Num     Den
+Effect              DF      DF    F Value    Pr > F
+
+pair_dev_Freq        1     217       8.54    0.0038
+pair_mean_Freq       1     217       0.14    0.7045
+Model 4 association of alcohol score with WM_Task_2bk_Acc_z_scores                            Monday, March 13, 2023 12:40:00 PM   7
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     FILES2.TWINS_ALCOHOL7    
+Dependent Variable           WM_Task_2bk_Acc_z_scores 
+Covariance Structure         Variance Components      
+Subject Effect               twpair                   
+Group Effects                NumZygosity, NumZygosity 
+Estimation Method            ML                       
+Residual Variance Method     None                     
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             4
+Columns in X                      3
+Columns in Z per Subject          2
+Subjects                        218
+Max Obs per Subject               2
+
+
+          Number of Observations
+
+Number of Observations Read             436
+Number of Observations Used             436
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations        -2 Log Like       Criterion
+
+        0              1      1228.45418668                
+        1              2      1152.42598745      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                           Covariance Parameter Estimates
+ 
+                                                      Standard         Z
+Cov Parm      Subject    Group            Estimate       Error     Value      Pr > Z
+
+Intercept     twpair     NumZygosity 0      0.3651      0.1226      2.98      0.0015
+Intercept     twpair     NumZygosity 1      0.5854     0.09565      6.12      <.0001
+Residual                 NumZygosity 0      0.6537      0.1041      6.28      <.0001
+Residual                 NumZygosity 1      0.3725     0.04470      8.33      <.0001
+
+
+           Fit Statistics
+
+-2 Log Likelihood              1152.4
+AIC (Smaller is Better)        1166.4
+AICC (Smaller is Better)       1166.7
+Model 4 association of alcohol score with WM_Task_2bk_Acc_z_scores                            Monday, March 13, 2023 12:40:00 PM   8
+
+The Mixed Procedure
+
+           Fit Statistics
+
+BIC (Smaller is Better)        1190.1
+
+
+                                      Solution for Fixed Effects
+ 
+                              Standard
+Effect            Estimate       Error      DF    t Value    Pr > |t|     Alpha       Lower       Upper
+
+Intercept         0.004681     0.05829     216       0.08      0.9361      0.05     -0.1102      0.1196
+pair_dev_Freq     -0.08025     0.08396     217      -0.96      0.3402      0.05     -0.2457     0.08523
+pair_mean_Freq      0.1494     0.06927     217       2.16      0.0321      0.05     0.01289      0.2859
+
+
+           Type 3 Tests of Fixed Effects
+ 
+                   Num     Den
+Effect              DF      DF    F Value    Pr > F
+
+pair_dev_Freq        1     217       0.91    0.3402
+pair_mean_Freq       1     217       4.65    0.0321
+Model 4 association of alcohol score with Latent_WM                                           Monday, March 13, 2023 12:40:00 PM   9
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     FILES2.TWINS_ALCOHOL7    
+Dependent Variable           Latent_WM                
+Covariance Structure         Variance Components      
+Subject Effect               twpair                   
+Group Effects                NumZygosity, NumZygos    
+Estimation Method            ML                       
+Residual Variance Method     None                     
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             4
+Columns in X                      3
+Columns in Z per Subject          2
+Subjects                        218
+Max Obs per Subject               2
+
+
+          Number of Observations
+
+Number of Observations Read             436
+Number of Observations Used             436
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations        -2 Log Like       Criterion
+
+        0              1      1027.47038990                
+        1              2       909.18521673      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                           Covariance Parameter Estimates
+ 
+                                                      Standard         Z
+Cov Parm      Subject    Group            Estimate       Error     Value      Pr > Z
+
+Intercept     twpair     NumZygosity 0      0.2413     0.07406      3.26      0.0006
+Intercept     twpair     NumZygosity 1      0.4530     0.06542      6.92      <.0001
+Residual                 NumZygosity 0      0.3691     0.05873      6.28      <.0001
+Residual                 NumZygosity 1      0.1694     0.02032      8.34      <.0001
+
+
+           Fit Statistics
+
+-2 Log Likelihood               909.2
+AIC (Smaller is Better)         923.2
+AICC (Smaller is Better)        923.4
+Model 4 association of alcohol score with Latent_WM                                           Monday, March 13, 2023 12:40:00 PM  10
+
+The Mixed Procedure
+
+           Fit Statistics
+
+BIC (Smaller is Better)         946.9
+
+
+                                      Solution for Fixed Effects
+ 
+                              Standard
+Effect            Estimate       Error      DF    t Value    Pr > |t|     Alpha       Lower       Upper
+
+Intercept         0.005653     0.04746     216       0.12      0.9053      0.05    -0.08788     0.09919
+pair_dev_Freq      -0.1947     0.05866     217      -3.32      0.0011      0.05     -0.3103    -0.07907
+pair_mean_Freq     0.07781     0.05679     217       1.37      0.1720      0.05    -0.03411      0.1897
+
+
+           Type 3 Tests of Fixed Effects
+ 
+                   Num     Den
+Effect              DF      DF    F Value    Pr > F
+
+pair_dev_Freq        1     217      11.02    0.0011
+pair_mean_Freq       1     217       1.88    0.1720
